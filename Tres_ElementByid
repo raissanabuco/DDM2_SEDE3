@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo document.getElementById()</title>
+</head>
+<body>
+
+<div id="meuElemento">
+  Este é um elemento com um ID específico.
+</div>
+
+<script>
+let elemento = document.getElementById("meuElemento");
+console.log(elemento.textContent); // Saída: Este é um elemento com um ID específico.
+</script>
+
+</body>
+</html>
