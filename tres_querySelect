@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>querySelector Exemplo</title>
+  <style>
+    .example {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <p class="example">Este é um parágrafo com a classe 'example'.</p>
+  <p>Este é outro parágrafo.</p>
+  
+  <script>
+    var element = document.querySelector('.example');
+    console.log(element.innerHTML); // Saída: Este é um parágrafo com a classe 'example'.
+  </script>
+</body>
+</html>
