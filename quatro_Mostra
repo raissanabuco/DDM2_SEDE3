@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de onchange com Bootstrap</title>
+  <!-- Adicionando link para o Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script>
+    function mostrarSelecao() {
+      var selecionado = document.getElementById("meuSelect").value;
+      alert("Opção selecionada: " + selecionado);
+    }
+  </script>
+</head>
+<body>
+
+<!-- Select estilizado com Bootstrap -->
+<select id="meuSelect" class="form-control" onchange="mostrarSelecao()">
+  <option value="opcao1">DDM</option>
+  <option value="opcao2">AD</option>
+  <option value="opcao3">SW</option>
+</select>
+
+<!-- Adicionando link para o Bootstrap JS no final do body para melhor desempenho -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
