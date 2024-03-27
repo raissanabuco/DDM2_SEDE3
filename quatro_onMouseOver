@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <title>Exemplo de onmouseover com Bootstrap</title>
+  <!-- Adicionando link para o Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script>
+    function mostrarMensagem() {
+      alert("Olá Professor Trabalho feito por Marcos Santucci e Raíssa nabuco - 3ºIPI");
+    }
+  </script>
+</head>
+<body>
+<br>
+<!-- Botão estilizado com Bootstrap -->
+<button class="btn btn-primary center" onmouseover="mostrarMensagem()">Passe o Mouse</button>
+
+<!-- Adicionando link para o Bootstrap JS no final do body para melhor desempenho -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
