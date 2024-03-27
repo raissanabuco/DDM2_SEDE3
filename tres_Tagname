@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>getElementsByTagName Exemplo</title>
+</head>
+<body>
+  <p>Este é um parágrafo.</p>
+  <p>Este é outro parágrafo.</p>
+  
+  <script>
+    var paragraphs = document.getElementsByTagName('p');
+    for (var i = 0; i < paragraphs.length; i++) {
+      console.log(paragraphs[i].innerHTML); // Saída: Este é um parágrafo. e Este é outro parágrafo.
+    }
+  </script>
+</body>
+</html>
