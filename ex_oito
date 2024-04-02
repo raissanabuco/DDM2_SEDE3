@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de Números</title>
+    <!-- Adicionando Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo para centralizar o conteúdo */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        /* Estilo para o resultado */
+        #resultado {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Soma de Números</h1>
+        <form>
+            <div class="form-group">
+                <label for="numero1">Digite o primeiro número:</label>
+                <input type="number" id="numero1" class="form-control" placeholder="Digite o primeiro número">
+            </div>
+            <div class="form-group">
+                <label for="numero2">Digite o segundo número:</label>
+                <input type="number" id="numero2" class="form-control" placeholder="Digite o segundo número">
+            </div>
+            <button type="button" onclick="calcularSoma()" class="btn btn-primary">Calcular Soma</button>
+        </form>
+        <div id="resultado" class="mt-3"></div>
+    </div>
+
+    <!-- Adicionando Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Se você precisar de suporte para Internet Explorer, adicione também o Popper.js -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+
+    <script>
+        function calcularSoma() {
+            var numero1 = parseFloat(document.getElementById("numero1").value);
+            var numero2 = parseFloat(document.getElementById("numero2").value);
+            var soma = numero1 + numero2;
+            document.getElementById("resultado").textContent = "A soma é: " + soma;
+        }
+    </script>
+</body>
+</html>
