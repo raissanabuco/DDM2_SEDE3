@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>querySelectorAll Exemplo</title>
+  <style>
+    .example {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <p class="example">Este é um parágrafo com a classe 'example'.</p>
+  <p>Este é outro parágrafo.</p>
+  <p class="example">Este é mais um parágrafo com a classe 'example'.</p>
+  
+  <script>
+    var elements = document.querySelectorAll('.example');
+    for (var i = 0; i < elements.length; i++) {
+      console.log(elements[i].innerHTML); // Saída: Este é um parágrafo com a classe 'example'. e Este é mais um parágrafo com a classe 'example'.
+    }
+  </script>
+</body>
+</html>
