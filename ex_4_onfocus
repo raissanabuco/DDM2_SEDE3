@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <title>Exemplo de onfocus com Bootstrap</title>
+  <!-- Adicionando link para o Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script>
+    function mostrarMensagem() {
+      alert("Você apertou o campo texto !");
+    }
+  </script>
+</head>
+<body>
+
+<!-- Campo de texto estilizado com Bootstrap -->
+<input type="text" class="form-control" onfocus="mostrarMensagem()" placeholder="Clique aqui para digitar">
+
+<!-- Adicionando link para o Bootstrap JS no final do body para melhor desempenho -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
