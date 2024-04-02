@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter para Caixa Alta</title>
+    <!-- Adicionando Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo para centralizar o conteúdo */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        /* Estilo para o resultado */
+        #resultado {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Converter para Caixa Alta</h1>
+        <label for="entrada">Digite uma Palavra:</label>
+        <input type="text" id="entrada" class="form-control">
+        <button onclick="exibirResultado()" class="btn btn-primary mt-3">Converter</button>
+        <div id="resultado" class="mt-3"></div>
+    </div>
+
+    <!-- Adicionando Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Se você precisar de suporte para Internet Explorer, adicione também o Popper.js -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+
+    <script>
+        function converterParaCaixaAlta(string) {
+            return string.toUpperCase();
+        }
+
+        function exibirResultado() {
+            var entrada = document.getElementById("entrada").value;
+            var resultado = converterParaCaixaAlta(entrada);
+            document.getElementById("resultado").textContent = resultado;
+        }
+    </script>
+</body>
+</html>
