@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplos de Funções JavaScript</title>
+  <!-- Adicionando link para o Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Função Nomeada -->
+<button class="btn btn-primary" onclick="saudacao()">Clique para saudar</button>
+
+<!-- Função Nomeada com argumento e retorno -->
+<p id="resultadoSoma"></p>
+<button class="btn btn-primary" onclick="exibirSoma()">Clique para exibir soma</button>
+
+<!-- Função com Construtor -->
+<p id="infoPessoa"></p>
+
+<!-- Função Literal (variável) -->
+<button class="btn btn-primary" onclick="minhaFuncao()">Clique para executar função literal</button>
+
+<!-- Função de Flecha -->
+<p id="resultadoSomaArrow"></p>
+<button class="btn btn-primary" onclick="exibirSomaArrow()">Clique para exibir soma (função de flecha)</button>
+
+<!-- Adicionando link para o Bootstrap JS no final do body para melhor desempenho -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  // Função Nomeada
+  function saudacao() {
+    alert("Ola, está é uma função saudacao");
+  }
+
+  // Função Nomeada com argumento e retorno
+  function soma(a, b) {
+    return a + b;
+  }
+
+  function exibirSoma() {
+    var resultado = soma(3, 5);
+    document.getElementById("resultadoSoma").innerHTML = "O resultado da soma é: " + resultado;
+  }
+
+  // Função com Construtor
+  function Pessoa(nome, idade) {
+    this.nome = nome;
+    this.idade = idade;
+  }
+
+  var pessoa1 = new Pessoa("João", 30);
+  document.getElementById("infoPessoa").innerHTML = pessoa1.nome + " tem " + pessoa1.idade + " anos.";
+
+  // Função Literal (variável)
+  var minhaFuncao = function() {
+    alert("Esta é uma função literal.");
+  };
+
+  // Função de Flecha
+  var somaArrow = (a, b) => a + b;
+
+  function exibirSomaArrow() {
+    var resultadoArrow = somaArrow(3, 5);
+    document.getElementById("resultadoSomaArrow").innerHTML = "O resultado da soma é: " + resultadoArrow;
+  }
+</script>
+
+</body>
+</html>
